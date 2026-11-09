@@ -1,0 +1,17 @@
+<resources>
+    <!-- bảng màu lấy từ cấu hình giao diện của app gốc (ads_config.dat đã giải mã) -->
+    <color name="bg">#06041A</color>
+    <color name="surface">#140F3C</color>
+    <color name="surface_high">#1E1856</color>
+    <color name="text">#F6F4FF</color>
+    <color name="text_dim">#A9A3D9</color>
+    <color name="stroke">#38A9A3D9</color>
+    <color name="grad_start">#2F6BF2</color>
+    <color name="grad_mid">#5A5CF8</color>
+    <color name="grad_end">#8B4DFC</color>
+    <color name="gold">#F5D76E</color>
+    <color name="line_heart">#FF5C7A</color>
+    <color name="line_head">#4ADE80</color>
+    <color name="line_life">#60A5FA</color>
+    <color name="ic_launcher_background">#2B1B6B</color>
+</resources>

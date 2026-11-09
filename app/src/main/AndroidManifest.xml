@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera.any" android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PalmReader">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.PalmReader.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".OnboardingActivity" android:theme="@style/Theme.PalmReader.NoActionBar" />
+        <activity android:name=".PalmGuideActivity" android:label="Yêu cầu ảnh chụp" />
+        <activity
+            android:name=".ScanActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PalmReader.NoActionBar" />
+        <activity android:name=".PalmResultActivity" android:label="Phân tích bàn tay" />
+        <activity android:name=".ProfileActivity" android:label="Hồ sơ" />
+        <activity android:name=".HoroscopeActivity" android:label="Tử vi hằng ngày" />
+        <activity android:name=".TarotActivity" android:label="Bói bài Tarot" />
+        <activity android:name=".LoveActivity" android:label="Test tình duyên" />
+        <activity android:name=".AstrologyActivity" android:label="Chiêm tinh Vệ Đà" />
+    </application>
+</manifest>

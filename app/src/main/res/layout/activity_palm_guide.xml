@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_hero"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:importantForAccessibility="no"
+                    android:text="🖐"
+                    android:textSize="88sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Ảnh mẫu chuẩn"
+                    android:textColor="@color/gold"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/Dim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:text="Lòng bàn tay mở phẳng, các ngón hơi tách, cả bàn tay nằm trong khung." />
+            </LinearLayout>
+
+            <TextView
+                style="@style/Section"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Nên làm" />
+
+            <TextView
+                style="@style/Dim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_tile"
+                android:lineSpacingExtra="10dp"
+                android:padding="16dp"
+                android:text="✅  Mở bàn tay, hướng lòng bàn tay vào camera\n✅  Toàn bộ lòng bàn tay nằm trong khung\n✅  Đủ ánh sáng, giữ máy thật vững" />
+
+            <TextView
+                style="@style/Section"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Tránh" />
+
+            <TextView
+                style="@style/Dim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_tile"
+                android:lineSpacingExtra="10dp"
+                android:padding="16dp"
+                android:text="❌  Gập hoặc khum bàn tay\n❌  Khép chặt các ngón tay\n❌  Đeo nhẫn, vòng tay\n❌  Chụp quá xa, tay bị mờ hoặc tối" />
+
+            <TextView
+                style="@style/Dim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="Ảnh không đạt yêu cầu có thể làm kết quả kém chính xác."
+                android:textSize="12sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnStart"
+        style="@style/Cta"
+        android:layout_marginTop="12dp"
+        android:text="Tôi đã hiểu, bắt đầu quét" />
+</LinearLayout>
